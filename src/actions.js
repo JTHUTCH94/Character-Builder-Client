@@ -38,9 +38,6 @@ export const setName = (name) => ({
     name
 });
 
-/*export const setNameAction = (e) => {
-    this.props.dispatch(setName(e.target.value));
-}*/
 
 export const SET_RACE = 'SET_RACE';
 export const setRace = (race) => ({
