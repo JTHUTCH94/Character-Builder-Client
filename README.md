@@ -14,3 +14,23 @@ Screenshots:
 
 ![image](https://user-images.githubusercontent.com/34722406/39636866-74ff22dc-4f8f-11e8-8e0b-e76b7a93ab54.png "The app's update character form")
 
+Tech-Stack:
+
+The client side of the app is built using React and Redux. It consists of mutiple components designed to handle and dispatch multiple different actions essential to the operation of the application. The components consist of disfferent groupings; Inputs, Displays, Forms, & Decorations (not all of which are used). The inputs include anything that is required for the direct manipulation of the data in the application. The forms are structured forms for the creation of the characters. The displays are simply the components designed to show the created/updated characters. The decorations are just decorations. CSS rulesets are used to style the application, and media queries are set to handle cross platform use of the application.
+
+The server side of the application is built using JavaScript, Mongoose, Chai, and Express. It uses an mLab instance to manage the application's data, which is accessed and manipulated through the use of a simple API. It is styled after the CRUD method of developing API's. 
+
+Application Status:
+- This is the first version of the RPG Character Builder application. 
+- Future updates will include more styling and additional features 
+  * Including but not limited to:
+    - User creation/login
+    - Search functionality
+    - Character images
+    
+Source:
+The source code for this application can be found at:
+  - Client side: 
+    https://github.com/JTHUTCH94/Character-Builder-Client
+  - Server side:
+    https://github.com/JTHUTCH94/Character-Builder-Server
