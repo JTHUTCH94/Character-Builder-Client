@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8080";
-//const API_URL = "https://character-builder-server.herokuapp.com";
+//const API_URL = "http://localhost:8080";
+const API_URL = "https://character-builder-server.herokuapp.com";
 
 export const ENTER_SCREEN = 'ENTER_SCREEN';
 export const enterScreen = () => ({
