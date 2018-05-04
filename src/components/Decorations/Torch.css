@@ -1,5 +1,5 @@
 .flame1{
-    position: relative;
+    position: absolute;
     display: block;
     width: 40px;
     height: 40px;
@@ -11,12 +11,12 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     z-index: -1;
-    top: 120px;
-    left: 120px;
+    top: 50px;
+    left: 150px;
   }
   
   .flame2{
-    position: relative;
+    position: absolute;
     display: block;
     width: 40px;
     height: 40px;
@@ -28,12 +28,12 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     z-index: -1;
-    top: 135px;
-    left: 140px;
+    top: 50px;
+    right: 150px;
   }
   
   .flame{
-    position:relative;
+    position:absolute;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
@@ -47,7 +47,7 @@
     background:gold;
     box-shadow: 0px 0px 9px 4px gold;
     z-index: -1;
-    top: -65px;
+    top: 0px;
     left: 7px;
   }
   
@@ -57,7 +57,7 @@
     background:orange;
     box-shadow: 0px 0px 9px 4px orange;
     z-index: -1;
-    top: -35px;
+    top: 10px;
     left: 5px;
   }
   
@@ -75,15 +75,15 @@
     background:white;
     box-shadow: 0px 0px 9px 4px white;
     z-index: -1;
-    top: -92px;
-    left: 8px;
+    top: 20px;
+    left: 10px;
   }
   
   .circle{
     border-radius: 50%;
     position:relative;
     z-index: -1;
-    top: -100px;  
+    top: 40px;  
   }
   
   .blue{
@@ -93,7 +93,7 @@
     box-shadow: 0px 0px 15px 10px SlateBlue;
     z-index: -1;
     left: 20px;
-    top: -90px;
+    top: 50px;
   }
   
   .black{
@@ -102,7 +102,7 @@
     background: black;
     box-shadow: 0px 0px 15px 10px black;
     z-index: -2;
-    left: 5px;
+    left: 10px;
   }
   
   @keyframes flicker{
@@ -124,12 +124,12 @@
       border-bottom: solid 4px tan;
       border-top: solid 5px darkslategray;
       border-radius: 5px;
-      position: relative;
+      position: absolute;
       border-top-right-radius: 25px;
       border-top-left-radius: 25px;
       z-index: -1;
-      left: 135px;
-      top: 140px;
+      left: 165px;
+      top: 100px;
   }
   
   .torch-handle2{
@@ -142,42 +142,42 @@
       border-bottom: solid 4px tan;
       border-top: solid 5px darkslategrey;
       border-radius: 5px;
-      position: relative;
+      position: absolute;
       border-top-right-radius: 25px;
       border-top-left-radius: 25px;
       z-index: -1;
-      top: 50px;
-      left: 155px;
+      top: 85px;
+      right: 155px;
   }
   
   .torch-grip1{
     display: block;
-    width: 6%;
+    width: 20px;
     height: 40px;
     background: linear-gradient(to right,silver,grey, silver);
     z-index: -1;
-    position: relative;
+    position: absolute;
     border: 1px solid darkgray;
     border-bottom: solid 2px grey;
     border-top: solid 1px grey;
     border-radius: 5px;
-    left: 135px;
-    top: 0px;
+    top: 170px;
+    left: 165px;
   }
   
   .torch-grip2{
     display: block;
-    width: 6%;
+    width: 20px;
     height: 40px;
     background: linear-gradient(to right,silver,grey, silver);
     z-index: 1;
-    position: relative;
+    position: absolute;
     border: 1px solid darkgray;
     border-bottom: solid 2px grey;
-      border-top: solid 1px grey;
-      border-radius: 5px;
-      top: -90px;
-      left: 155px;
+    border-top: solid 1px grey;
+    border-radius: 5px;
+    top: 170px;
+    right: 154px; 
   }
   
   .wallmount1{
@@ -188,9 +188,9 @@
     border: solid 1px darkgrey;
     border-radius: 15px;
     z-index: -2;
-    position: relative;
-    left: 120px;
-    top: -75px;
+    position: absolute;
+    left: 152px;
+    top: 155px;
   }
   
   .wallmount2{
@@ -201,21 +201,53 @@
     border: solid 1px darkgrey;
     border-radius: 15px;
     z-index: -2;
-    position: relative;
-    top: 210px;
-    left: 140px;
+    position: absolute;
+    top: 155px;
+    right: 142px;
   }
 
   .torch1{
     display: inline-block;
-    width: 25%;
+    width: 300px;
     margin: auto;
-    align-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    height: 400px;
   }
 
   .torch2{
     display: inline-block;
-    width: 25%;
+    width: 300px;
     margin: auto;
-    align-content: center;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .torch1{
+      display: none;
+    }
+
+    .torch2{
+      display: none;
+    }
+  }
+
+  @media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3){
+    .torch1{
+      display: none;
+    }
+
+    .torch2{
+      display: none;
+    }
   }

@@ -2,12 +2,12 @@ import React from 'react';
 import { deleteCharacterAction, setUpdate } from '../../actions';
 import { connect } from 'react-redux';
 import './CharacterList.css';
+import TopNav from '../Inputs/TopNav';
 
-function CharacterList(props) {
-    console.log(props.characters);
+export function CharacterList(props) {
     const characters = props.characters.map((character, index) => (
 
-        <li key={index} className="characters">
+        <li key={index} className="character">
             <p>{character.name}</p>
             <p>{character.race}</p>
             <p>{character.classification}</p>
@@ -17,9 +17,12 @@ function CharacterList(props) {
         </li>))
 
     return (
+        <div className="character-screen">
+        <TopNav />
         <div className="character-list">
             <h1 className="characters-title">Existing Characters</h1>
             <ul className="character-display">{characters}</ul>
+        </div>
         </div>
     )
 }

@@ -1,10 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Torch1 from '../Decorations/Torch1';
+import Torch2 from '../Decorations/Torch2';
+import TopNav from '../Inputs/TopNav';
 import './CharacterCard.css';
 
 export function CharacterCard(props) {
-    console.log(props);
     return (
+        <div className="card-screen">
+        <Torch1 />
+        <TopNav />
         <div className="character-card">
             <div className="character-name">
                 <label>
@@ -30,6 +35,8 @@ export function CharacterCard(props) {
                         <h1>{props.weapon}</h1>
                 </label>
             </div>
+        </div>
+        <Torch2 />
         </div>
     )
 }

@@ -1,9 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Torch1 from '../Decorations/Torch1';
+import Torch2 from '../Decorations/Torch2';
+import TopNav from '../Inputs/TopNav';
 import './UpdatedCharacter.css';
 
 export function UpdatedCharacter(props) {
     return (
+        <div className="update-card">
+        <Torch1 />
+        <TopNav />
         <div className="character-card">
             <div className="character-name">
                 <label>
@@ -30,8 +36,16 @@ export function UpdatedCharacter(props) {
                 </label>
             </div>
         </div>
+        <Torch2 />
+        </div>
     )
 }
 
+const mapStateToProps = (state) => ({
+    name: state.name,
+    race: state.race,
+    classification: state.classification,
+    weapon: state.weapon
+});
 
-export default connect()(UpdatedCharacter);
+export default connect(mapStateToProps)(UpdatedCharacter);

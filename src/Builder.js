@@ -11,6 +11,8 @@ import UpdateForm from './components/Forms/UpdateForm';
 import UpdatedCharacterCard from './components/Displays/UpdatedCharacter';
 import Name from './components/Inputs/Name';
 import TopNav from './components/Inputs/TopNav';
+import Torch1 from './components/Decorations/Torch1';
+import Torch2 from './components/Decorations/Torch2';
 import './Builder.css';
 
 import { createCharacterAction, setName, setRace, setClassification, setWeapon, enterScreen } from './actions';
@@ -51,21 +53,18 @@ export class Builder extends React.Component {
         } else if (this.props.display === "characters") {
             return (
                 <div className="character-page">
-                    <TopNav />
                     <CharacterList characters={this.props.characters} />
                 </div>
             )
         } else if (this.props.display === 'update') {
             return (
                 <div className="update-form">
-                    <TopNav />
                     <UpdateForm />
                 </div>
             )
         } else if (this.props.display === 'updated-character') {
             return (
                 <div className="updated-character">
-                    <TopNav />
                     <UpdatedCharacterCard />
                 </div>
             );

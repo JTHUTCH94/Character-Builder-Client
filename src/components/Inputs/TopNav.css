@@ -59,10 +59,10 @@
   and (orientation: portrait) { 
     .nav-bar{
       display: block;
-      width: 100%;
+      width: 90%;
       margin: auto;
       margin-top: 10px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 }
 

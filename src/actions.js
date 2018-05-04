@@ -1,5 +1,5 @@
-//const API_URL = "http://localhost:8080";
-const API_URL = "https://character-builder-server.herokuapp.com";
+const API_URL = "http://localhost:8080";
+//const API_URL = "https://character-builder-server.herokuapp.com";
 
 export const ENTER_SCREEN = 'ENTER_SCREEN';
 export const enterScreen = () => ({
@@ -91,7 +91,7 @@ export const deleteCharacter = (id) => ({
 
 export const deleteCharacterAction = (id) => dispatch => {
 
-    return fetch(API_URL + '/api/characters' + id, {
+    return fetch(API_URL + '/api/characters/' + id, {
         method: 'DELETE'
     })
         .then(res => dispatch(deleteCharacter(id)))
@@ -113,7 +113,7 @@ export const updateCharacter = (updatedCharacter) => ({
 export const updateCharacterAction = (id) => (dispatch, getState) => {
     const state = getState();
 
-    return fetch(API_URL + '/api/characters' + id, {
+    return fetch(API_URL + '/api/characters/' + id, {
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
