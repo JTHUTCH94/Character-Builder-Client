@@ -2,14 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Torch1 from '../Decorations/Torch1';
 import Torch2 from '../Decorations/Torch2';
-import TopNav from '../Inputs/TopNav';
 import './UpdatedCharacter.css';
 
 export function UpdatedCharacter(props) {
     return (
         <div className="update-card">
         <Torch1 />
-        <TopNav />
         <div className="character-card">
             <div className="character-name">
                 <label>

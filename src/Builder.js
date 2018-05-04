@@ -46,24 +46,28 @@ export class Builder extends React.Component {
         } else if (this.props.display === 'new-character') {
             return (
                 <div className="new-character">
+                    <TopNav />
                     <CharacterCard />
                 </div>
             );
         } else if (this.props.display === "characters") {
             return (
                 <div className="character-page">
+                    <TopNav />
                     <CharacterList characters={this.props.characters} />
                 </div>
             )
         } else if (this.props.display === 'update') {
             return (
                 <div className="update-form">
+                    <TopNav />
                     <UpdateForm />
                 </div>
             )
         } else if (this.props.display === 'updated-character') {
             return (
                 <div className="updated-character">
+                    <TopNav />
                     <UpdatedCharacterCard />
                 </div>
             );

@@ -4,7 +4,6 @@ import Name from '../Inputs/Name';
 import Race from '../Inputs/Race';
 import Class from '../Inputs/Class';
 import Weapon from '../Inputs/Weapon';
-import TopNav from '../Inputs/TopNav';
 import { setName, setRace, setClassification, setWeapon, updateCharacterAction } from '../../actions';
 import './UpdateForm.css';
 
@@ -13,7 +12,6 @@ export class UpdateForm extends React.Component {
     render() {
         return (
             <div className="update-screen">
-            <TopNav />
             <form className="update-choices" onSubmit={e => { e.preventDefault(); this.props.dispatch(updateCharacterAction(this.props.id, e)) }}>
             <h1 className="title">Update your character</h1>
                 <Name className="name-input" name={this.props.name} onInput={e => { e.preventDefault(); this.props.dispatch(setName(e.target.value)) }} />
