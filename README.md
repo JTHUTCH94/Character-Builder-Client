@@ -6,4 +6,12 @@ Welcome to the RPG Character Builder Version 1. This is a simple character custo
 
 Screenshots:
 
-![image](https://user-images.githubusercontent.com/34722406/39636677-f7d2bf94-4f8e-11e8-9aa0-36185fdbcb38.png)
+![image](https://user-images.githubusercontent.com/34722406/39636677-f7d2bf94-4f8e-11e8-9aa0-36185fdbcb38.png "The app's landing page")
+
+![image](https://user-images.githubusercontent.com/34722406/39636852-68da2a42-4f8f-11e8-946a-474a19259c83.png "The app's create character form")
+
+![image](https://user-images.githubusercontent.com/34722406/39636856-6e45dc4c-4f8f-11e8-958b-1dc30070c594.png "The app's character list")
+
+![image](https://user-images.githubusercontent.com/34722406/39636866-74ff22dc-4f8f-11e8-8e0b-e76b7a93ab54.png "The app's update character form")
+
+
