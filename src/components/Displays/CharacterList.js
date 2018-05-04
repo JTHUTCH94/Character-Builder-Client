@@ -16,11 +16,9 @@ export function CharacterList(props) {
         </li>))
 
     return (
-        <div className="character-screen">
         <div className="character-list">
             <h1 className="characters-title">Existing Characters</h1>
             <ul className="character-display">{characters}</ul>
-        </div>
         </div>
     )
 }
