@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: CVPTUNfaq0cAL2AYrzTQqM0LmlP1e5nJKkdZO1J3iDpXSgjG/Sa3GljDSlrkXS975cKVJu1H3gLG1jOAj4uClYdUK8L0Tqmoo40E+mBlIaMfAXuL54dRNK2brLBXPDsxB1i5zYiPGrj4oCYQH7KPs6Mz1zJEctvVpZ9aAQEYcur9afC9+O9HvJEXyH5Qpj7ykyt2uG9uPxb0y0aZxLGLFhDkuKs6ZcLI91GB5g50XFF+PTEJkCv24voFc+73x41CFQUWJ1wAxglwpeBHG3K7GfByapWJpgf//JgoWuDw1qOcQqzZWWTZAoy+ZNfRni4SolKqB3o5i9T6cZREdI5qsUJutvl5nHHddd2RqBcLem5zxbUKRM+7EsNq8EDQc6tBtpii8an5GJ/FbEDtYk14DTj7+N2JgiZLndiH0CB+VzxmJR9gR/hgIUfg9oWEeu787m3GGqul0WOSLFINohPW6OxeQr0K3NneLPEk7rwjy+gFZACgN2Ka4ACqjTiB643vTEssMb6jHLzXEdurKdvXte+n7r9qWucmfK8vlxUgZeYmeQbPjZ6YTljZDOlHKr25la+7lG3TrXcVoo3jV07Mp/lqTEIMA2mnDi2GrWEQ4W4f7Ph2BTFcS9YFnKmwQAJ0890mbVvv4YWBSGUwg+mhJkXdsaJPd0JxRQ6lVPXokeI=
+  app: 'node_js: node'
+  on:
+    repo: JTHUTCH94/Character-Builder-Client
