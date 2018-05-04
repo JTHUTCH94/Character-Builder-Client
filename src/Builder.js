@@ -46,7 +46,6 @@ export class Builder extends React.Component {
         } else if (this.props.display === 'new-character') {
             return (
                 <div className="new-character">
-                    <TopNav />
                     <CharacterCard />
                 </div>
             );
