@@ -10,19 +10,20 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-    if(action.type === ENTER_SCREEN){
-        return Object.assign({}, state, {
+    switch (action.type) {
+        case ENTER_SCREEN:
+            return Object.assign({}, state, {
                 display: 'form'
             });
-    } else if(action.type === CREATE_FORM){
-        return Object.assign({}, state, {
+        case CREATE_FORM:
+            return Object.assign({}, state, {
                 display: 'form',
                 name: '',
                 race: '',
                 classification: '',
                 weapon: ''
             });
-    } else if(action.type === CREATE_CHARACTER) {
+        case CREATE_CHARACTER:
         return Object.assign({}, state, {
             display: 'new-character',
             name: action.newCharacter.name,
@@ -30,23 +31,23 @@ export default (state = initialState, action) => {
             classification: action.newCharacter.classification,
             weapon: action.newCharacter.weapon
         });
-    } else if(action.type === SET_NAME){
+        case SET_NAME:
         return Object.assign({}, state, {
             name: action.name
         });
-    } else if(action.type === SET_RACE){
+        case SET_RACE:
         return Object.assign({}, state, {
             race: action.race
         });
-    } else if(action.type === SET_CLASSIFICATION){
+        case SET_CLASSIFICATION:
         return Object.assign({}, state, {
             classification: action.classification
         });
-    } else if(action.type === SET_WEAPON){
+        case SET_WEAPON:
         return Object.assign({}, state, {
             weapon: action.weapon
         });
-    } else if (action.type === SET_UPDATE){
+        case SET_UPDATE:
         return Object.assign({}, state, {
             display: 'update',
             name: action.character.name,
@@ -55,17 +56,16 @@ export default (state = initialState, action) => {
             weapon: action.character.weapon,
             id: action.character.id
         });
-    } else if (action.type === GET_CHARACTERS){
-        
+        case GET_CHARACTERS:
         return Object.assign({}, state, {
             characters: action.characters,
             display: 'characters'
         });
-    } else if(action.type === DELETE_CHARACTER){
+        case DELETE_CHARACTER:
         return Object.assign({}, state, {
             characters: state.characters.filter(character => character.id !== action.id)
         });
-    } else if(action.type === UPDATE_CHARACTER){
+        case UPDATE_CHARACTER:
         console.log(action.updatedCharacter.name);
         return Object.assign({
             display: 'updated-character',
@@ -74,6 +74,6 @@ export default (state = initialState, action) => {
             classification: action.updatedCharacter.classification,
             weapon: action.updatedCharacter.weapon
         });
-    } 
-    return state;
-};
+        default:
+            return state;
+}};
