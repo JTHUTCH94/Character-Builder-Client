@@ -1,5 +1,5 @@
 import React from 'react';
-import { deleteCharacterAction, setUpdate } from '../../actions';
+import { deleteCharacterAction, setUpdate } from '../../actions/actions';
 import { connect } from 'react-redux';
 import './CharacterList.css';
 

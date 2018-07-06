@@ -15,7 +15,7 @@ import Torch1 from './components/Decorations/Torch1';
 import Torch2 from './components/Decorations/Torch2';
 import './Builder.css';
 
-import { createCharacterAction, setName, setRace, setClassification, setWeapon, enterScreen } from './actions';
+import { createCharacterAction, setName, setRace, setClassification, setWeapon, enterScreen } from './actions/actions';
 
 
 export class Builder extends React.Component {

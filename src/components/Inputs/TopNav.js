@@ -1,7 +1,7 @@
 import React from 'react';
 import './TopNav.css';
 import { connect } from 'react-redux';
-import { createForm, getCharactersAction } from'../../actions';
+import { createForm, getCharactersAction } from'../../actions/actions';
 
 export function TopNav(props) {
     return (

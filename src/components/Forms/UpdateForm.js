@@ -4,7 +4,7 @@ import Name from '../Inputs/Name';
 import Race from '../Inputs/Race';
 import Class from '../Inputs/Class';
 import Weapon from '../Inputs/Weapon';
-import { setName, setRace, setClassification, setWeapon, updateCharacterAction } from '../../actions';
+import { setName, setRace, setClassification, setWeapon, updateCharacterAction } from '../../actions/actions';
 import './UpdateForm.css';
 
 export class UpdateForm extends React.Component {
